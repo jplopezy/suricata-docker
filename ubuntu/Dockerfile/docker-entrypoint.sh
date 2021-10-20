@@ -16,8 +16,6 @@ rm mycron
 
  
 
-
-
 # Started suricata
 /usr/bin/suricata -c /etc/suricata/suricata.yaml -i eth0
 
