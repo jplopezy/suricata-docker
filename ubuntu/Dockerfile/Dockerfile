@@ -9,6 +9,7 @@ RUN  apt-get update
 RUN  apt-get upgrade -y
 RUN  apt-get -y install suricata 
 RUN  apt-get -y install libpcre3-dbg libpcre3-dev autoconf automake libtool libpcap-dev libnet1-dev libyaml-dev zlib1g-dev libcap-ng-dev libmagic-dev libjansson-dev libjansson4 
+RUN  mkdir /var/log/suricata/elk
 ADD crontab /etc/cron.d/cron-surticata
 RUN chmod 0644 /etc/cron.d/cron-surticata
 CMD cron
