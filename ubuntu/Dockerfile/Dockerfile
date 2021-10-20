@@ -9,7 +9,7 @@ RUN  apt-get update
 RUN  apt-get upgrade -y
 RUN  apt-get -y install suricata 
 RUN  apt-get -y install libpcre3-dbg libpcre3-dev autoconf automake libtool libpcap-dev libnet1-dev libyaml-dev zlib1g-dev libcap-ng-dev libmagic-dev libjansson-dev libjansson4 
-RUN  mkdir /var/log/suricata/elk
+
 
 
 COPY suricata-update.sh /etc/suricata/suricata-update.sh
@@ -22,6 +22,5 @@ COPY docker-entrypoint.sh /tmp/docker-entrypoint.sh
 RUN chmod +x /tmp/docker-entrypoint.sh
 
 COPY suricata.yaml /etc/suricata/suricata.yaml
-
 
 RUN ln -sf /dev/stdout /var/log/suricata/suricata.log
