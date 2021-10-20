@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 RUN  apt-get update
 RUN  apt-get upgrade -y
-RUN apt install software-properties-common
+RUN apt install software-properties-common -y
 RUN  add-apt-repository ppa:oisf/suricata-stable
 RUN  apt-get update
 RUN  apt-get upgrade -y
