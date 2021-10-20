@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 
-
+RUN  apt-get update -y apt-get upgrade -y
+RUN apt install software-properties-common
 RUN  add-apt-repository ppa:oisf/suricata-stable
 RUN  apt-get update -y apt-get upgrade -y
 RUN  apt-get install suricata -y
