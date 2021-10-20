@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+
+  suricata:
+    build: ./${OS_SURICATA}/Dockerfile/
+    container_name: suricata
+    cap_add:
+      - NET_ADMIN
+    network_mode: "host"
+    volumes:
+      - /var/log/suricata:/var/log/suricata
+      - ./rules/my.rules:/var/lib/suricata/rules/suricata.rules
+    entrypoint: /tmp/docker-entrypoint.sh

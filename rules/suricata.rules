@@ -1,0 +1,2 @@
+
+alert tcp any any -> any any (content:"passwd" ; msg: "Testing 1 - tcp"; sid:1; rev:1;)
