@@ -1,10 +1,10 @@
 FROM ubuntu:20.04
 
 
-RUN sudo add-apt-repository ppa:oisf/suricata-stable
-RUN sudo apt-get update -y apt-get upgrade -y
-RUN sudo apt-get install suricata -y
-RUN sudo apt-get install libpcre3-dbg libpcre3-dev autoconf automake libtool libpcap-dev libnet1-dev libyaml-dev zlib1g-dev libcap-ng-dev libmagic-dev libjansson-dev libjansson4 -y
+RUN  add-apt-repository ppa:oisf/suricata-stable
+RUN  apt-get update -y apt-get upgrade -y
+RUN  apt-get install suricata -y
+RUN  apt-get install libpcre3-dbg libpcre3-dev autoconf automake libtool libpcap-dev libnet1-dev libyaml-dev zlib1g-dev libcap-ng-dev libmagic-dev libjansson-dev libjansson4 -y
 
 
 COPY suricata-update.sh /etc/suricata/suricata-update.sh
