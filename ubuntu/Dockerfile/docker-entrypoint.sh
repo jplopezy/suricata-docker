@@ -6,8 +6,8 @@ suricata-update
 
 crontab -l > mycron
 
-echo "0 */6 * * * /etc/suricata/suricata-update.sh" > /dev/null 2>&1
-echo "*/1 * * * * * /etc/suricata/suricata-updatelog.sh" /dev/null 2>&1
+echo "0 */6 * * * /etc/suricata/suricata-update.sh" >> mycron
+echo "*/1 * * * * * /etc/suricata/suricata-updatelog.sh" >> mycron
 
 crontab mycron
 
