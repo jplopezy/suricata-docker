@@ -1,4 +1,7 @@
 
+mkdir -p /var/log/suricata/elk/
+
+touch /var/log/suricata/elk/eve.json
 
 
 while true; do
