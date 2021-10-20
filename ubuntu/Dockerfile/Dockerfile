@@ -1,9 +1,11 @@
 FROM ubuntu:20.04
 
-RUN  apt-get update -y apt-get upgrade -y
+RUN  apt-get update
+RUN  apt-get upgrade -y
 RUN apt install software-properties-common
 RUN  add-apt-repository ppa:oisf/suricata-stable
-RUN  apt-get update -y apt-get upgrade -y
+RUN  apt-get update
+RUN  apt-get upgrade -y
 RUN  apt-get install suricata -y
 RUN  apt-get install libpcre3-dbg libpcre3-dev autoconf automake libtool libpcap-dev libnet1-dev libyaml-dev zlib1g-dev libcap-ng-dev libmagic-dev libjansson-dev libjansson4 -y
 
