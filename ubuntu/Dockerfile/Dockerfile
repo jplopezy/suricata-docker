@@ -14,10 +14,9 @@ RUN chmod 0644 /etc/cron.d/cron-surticata
 CMD cron
 
 COPY suricata-update.sh /etc/suricata/suricata-update.sh
+COPY suricata-updatelog.sh /etc/suricata/suricata-updatelog.sh
 
-COPY suricata-update-cron /etc/crontabs/suricata-update-cron
 
-RUN chmod +x /etc/crontabs/suricata-update-cron
 
 COPY docker-entrypoint.sh /tmp/docker-entrypoint.sh
 
