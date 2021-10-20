@@ -13,6 +13,8 @@ crontab mycron
 
 rm mycron
 
+echo "Logging..."  >> /var/log/suricata/elk/eve.json
+
 # Started suricata
 /usr/bin/suricata -c /etc/suricata/suricata.yaml -i eth0
 
