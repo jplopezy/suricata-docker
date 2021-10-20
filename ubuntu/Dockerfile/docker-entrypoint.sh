@@ -14,9 +14,11 @@ crontab mycron
 
 rm mycron
 
-cd  /var/log/suricata/
-mkdir /var/log/suricata/elk
+  
+mkdir -p /var/log/suricata/elk
+touch /var/log/suricata/elk/eve.json
 
+ 
 
 
 echo "Logging..."  >> /var/log/suricata/elk/eve.json
