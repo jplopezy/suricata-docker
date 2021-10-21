@@ -15,7 +15,7 @@ RUN  apt-get -y install libpcre3-dbg libpcre3-dev autoconf automake libtool libp
 COPY suricata-update.sh /etc/suricata/suricata-update.sh
 COPY suricata-updatelog.sh /etc/suricata/suricata-updatelog.sh
 
-RUN mkdir -p /var/log/suricata/elk/
+RUN mkdir -p /var/lib/suricata/rules/
 
 
 COPY docker-entrypoint.sh /tmp/docker-entrypoint.sh
