@@ -12,10 +12,11 @@ crontab mycron
 
 rm mycron
 
+nohup  sh /etc/suricata/suricata-updatelog.sh  &
 
 # Started suricata
 /usr/bin/suricata -c /etc/suricata/suricata.yaml -i eth0
 
 
-sh /etc/suricata/suricata-updatelog.sh
+
 
