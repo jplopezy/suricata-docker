@@ -1,16 +1,11 @@
-version: '2'
-
-services:
-
-  suricata:
-    build: ./${OS_SURICATA}/Dockerfile/
-    container_name: suricata
-    cap_add:
-      - NET_ADMIN
-    network_mode: "host"
-    volumes:
-      - /var/log/suricata/:/var/log/suricata/
-      - ./rules/suricata.rules:/var/lib/suricata/rules/suricata.rules
-    entrypoint: /tmp/docker-entrypoint.sh
+Sector Pacífico http://192.168.10.160/sysworkflowSPP/es/neoclassic/login/login
+u: oydia1 p: ar1r-lD@
+u: oydia2 p: Q4<\"U[h
+u: oydia3 p: F8ve|bHf
+u: oydia4 p: Y\L!z5{v
+u: oydia5 p: g*IPoF5P
+u: oydia6 p: cr<5^'8V
 
 
+
+ workflowSPP  
